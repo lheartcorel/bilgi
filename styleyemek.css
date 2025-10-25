@@ -1,0 +1,32 @@
+body {
+    background-color: #420000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.galeri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1300px;
+    padding: 20px;
+}
+
+.galeri img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background-color: #111;      /* mat siyah çerçeve */
+    padding: 10px;               /* çerçeve kalınlığı */
+    border-radius: 14px;         /* yumuşak köşeler */
+    box-shadow: none;            /* gölgeyi tamamen kaldırdık */
+    transition: transform 0.3s ease;
+}
+
+.galeri img:hover {
+    transform: scale(1.05);
+}
